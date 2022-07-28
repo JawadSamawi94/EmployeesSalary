@@ -4,6 +4,7 @@ namespace EmployeesSalaries.Services
 {
     public interface IEmployeeService
     {
-        IEmployee GetEmployee(int id);
+        public IEmployee GetEmployee(int id);
+        public List<IEmployee> GetEmployees();
     }
 }

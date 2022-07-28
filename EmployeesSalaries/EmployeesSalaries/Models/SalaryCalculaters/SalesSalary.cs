@@ -6,10 +6,8 @@ namespace EmployeesSalaries.Models
     {
         public double BasicSalary { get; set; } = 1000;
         public double Target { get; set; } = 1000;
+
         public double GetTotalSalary() { return BasicSalary + (Target * 0.15); }
-        public bool IsMatch(string Role)
-        {
-            return Role == "Sales";
-        }
+        public bool IsMatch(string Role) { return Role == "Sales"; }
     }
 }

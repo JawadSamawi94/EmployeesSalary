@@ -16,5 +16,9 @@ namespace EmployeesSalaries.Services
         {
             return employees.First(employee => employee.IsMatch(id));
         }
+        public List<IEmployee> GetEmployees()
+        {
+            return employees;
+        }
     }
 }
