@@ -2,8 +2,8 @@
 {
     public interface IEmployeeSalaryCalculater
     {
-        double BasicSalary { get; set; }
-        double GetTotalSalary();
-        bool IsMatch(string Role);
+        public double BasicSalary { get; set; }
+        public double GetTotalSalary();
+        public bool IsMatch(string Role);
     }
 }

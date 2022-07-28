@@ -16,8 +16,13 @@ namespace EmployeesSalaries.Controllers
             _employeeService = employeeService;
         }
 
+        [HttpGet]
+        public List<IEmployee> GetEmployees()
+        {
+            return _employeeService.GetEmployees();
+        }
         [HttpGet("{id}")]
-        public IEmployee Get(int id)
+        public IEmployee GetEmployee(int id)
         {
             return _employeeService.GetEmployee(id);
         }

@@ -4,8 +4,6 @@ namespace EmployeesSalaries.Services
 {
     public interface IEmployeeSalaryService
     {
-        //IEmployeeSalaryCalculater EmployeeSalaryCalc {get;}
-        //void GetEmployeeCalculater (IEmployee employee);
-        double CalcSalary(IEmployee employee);
+        public double CalcSalary(IEmployee employee);
     }
 }

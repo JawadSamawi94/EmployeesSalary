@@ -2,14 +2,14 @@
 
 namespace EmployeesSalaries.Models.Employee
 {
-    public class Dev : IEmployee
+    public class Dev : IEmployee, IReportsTo
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Role { get; set; }
-        public LeadDev Manger { get; set; }
+        public string FirstName { get; set; } = "Test";
+        public string LastName { get; set; } = "Test";
+        public string Role { get; set; } = "Dev"; 
+        public IEmployee Manger { get; } = new LeadDev();
 
-        public int Id { get; }
+        public int Id { get; } = 4;
         public bool IsMatch(int id) { return true;}
     }
 }
